@@ -81,6 +81,9 @@ router.get('/lender-offers/:id', async (req, res) => {
     if (!application) {
       return res.status(404).json({ error: 'Application not found' });
     }
+    if(lenderPrograms?.length === 0){
+      return res.status(404).json({ error: 'No Lender programs found' });
+    }
     const offers = await calculateLenderOffers(application, lenderPrograms);
     const offer = offers.reduce((acc, obj) =>   obj.offerValue > acc.offerValue ? obj : acc)
     res.json({ data: offer, message: ' Lender offers calculated successfully' });
