@@ -12,6 +12,7 @@ Follow below steps to start the server:
  
 '''
    PORT=8000
+
    MONGO_URI=mongodb+srv://<username>:<password>@cluster1.3yhlt3j.mongodb.net/msme-db?retryWrites=true&w=majority
 '''
 
