@@ -15,8 +15,9 @@ Follow below steps to start the server:
    MONGO_URI=mongodb+srv://<username>:<password>@cluster1.3yhlt3j.mongodb.net/msme-db?retryWrites=true&w=majority
 '''
 
- Note:  Do change the mongo db uri as per your DB server
-        Dont change the port number otherwise it needs to be changed in the frontend apps in "api.js" file
+Note: Do change the mongo db uri as per your DB server
+ 
+Note:  Dont change the port number otherwise it needs to be changed in the frontend apps in "api.js" file
 
 6. run the command "npm run dev"
    
